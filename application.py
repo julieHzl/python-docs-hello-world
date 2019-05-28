@@ -7,7 +7,7 @@ version = os.environ['version']
 app = Flask(__name__)
 
 @app.route('/latest/online-win/')
-def winonline(version):
+def winonline():
     target_url = "https://vscjavaci.blob.core.windows.net/vscodejavainstaller/latest/VSCodeJavaInstaller-online-win-%s.exe"%version
     return redirect(target_url, code=302)
 
