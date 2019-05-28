@@ -6,7 +6,7 @@ version = "0.1.0"
 app = Flask(__name__)
 
 @app.route('/latest/online-win/')
-def jdk8winx64():
+def wiononline():
     target_url = "https://vscjavaci.blob.core.windows.net/vscodejavainstaller/latest/VSCodeJavaInstaller-online-win-%s.exe"%version
     return redirect(target_url, code=302)
 
